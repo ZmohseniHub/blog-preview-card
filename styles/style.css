@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Figtree SemiBold";
+    src: local("Figtree SemiBold"), url(../fonts/Figtree-SemiBold.ttf) format(truetype);
+}
+@font-face {
+    font-family: "Figtree ExtraBold";
+    src: local("Figtree ExtraBold"), url(../fonts/Figtree-ExtraBold.ttf) format(truetype);
+}
+*{
+    transition: all 220ms;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(47, 88%, 63%);
+    font-family: "Figtree SemiBold", Verdana, Geneva, Tahoma, sans-serif;
+}
+.card{
+    max-width: 320px;
+    border: 1px solid hsl(0, 0%, 7%);
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 8px 8px hsl(0, 0%, 7%);
+}
+.card:hover {
+    box-shadow: 18px 18px hsl(0, 0%, 7%);
+}
+.image{
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+}
+.learning{
+    padding: 18px 0;
+}
+.learning a{
+    padding: 6px 12px;
+    background-color: hsl(47, 88%, 63%);
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 0%, 7%);
+    font-size: 14px;
+    cursor: pointer;
+}
+.publish-date{
+    color: hsl(0, 0%, 7%);
+}
+.card-heading{
+    font-family: "Figtree ExtraBold", "Figtree SemiBold", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 18px 0;
+    
+}
+.card-heading a{
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+    cursor: pointer;
+}
+
+.card-heading a:hover{
+    color: hsl(47, 88%, 63%);
+
+}
+
+.card-text{
+    color: hsl(0, 0%, 50%);
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 0 0 0;
+}
+.user-img{
+    max-width: 35px;
+}
+.user-name{
+    font-family: "Figtree ExtraBold", "Figtree SemiBold", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+@media screen and (max-width: 375px) {
+    .card{
+        padding: 15px;
+    } 
+    .learning{
+        padding: 15px 0;
+
+    }
+    .learning a{
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+    .publish-date{
+        font-size: 12px;
+    }
+    .card-heading{
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    .card-text{
+        line-height: 22px;
+        font-size: 13px;
+    }
+    .user{
+        gap: 12px;
+        padding: 15px 0 0 0;
+    }
+    .user-name{
+        font-size: 12px;
+    }
+}
